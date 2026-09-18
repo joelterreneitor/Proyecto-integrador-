@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Resumen de Actividades Realizadas
+## 1. Resumen de Actividades 
 
 ### **Semana 1: Investigación, Entorno y Primeras Pruebas**
 * **Evaluación de Docker vs DBeaver:** Durante el inicio se investigó la implementación del entorno de base de datos utilizando Docker para estandarizar el contenedor de PostgreSQL.
@@ -29,21 +29,23 @@
 ## 3. Conceptos Estudiados y Teoría Aplicada
 * **Virtualización y Contenedores (Docker):** Concepto de aislamiento de servicios, imágenes de PostgreSQL, puerto por defecto (`5432`) y la dependencia de extensiones como `VT-x/AMD-V` en la BIOS del sistema operativo.
 * **Normalización y Tipos de Datos PostgreSQL:** Uso de datos de texto amplio (`TEXT`, `VARCHAR`), tipos numéricos de precisión para coordenadas (`NUMERIC`, `DOUBLE PRECISION`) y fechas (`TIMESTAMP`).
-* **Carga Masiva (Bulk Loading):** Estrategia para procesar archivos CSV pesados (~1M de filas) optimizando lecturas por bloque (*chunk size*) para evitar la saturación de memoria en el cliente de base de datos.
+* **Carga Masiva (Bulk Loading):** Estrategia para procesar archivos CSV pesados 
 
 ---
 
 ## 4. Librerías y Herramientas Utilizadas
-* **DBeaver Community:** Utilizado como la herramienta principal para la creación de esquemas, consultas SQL e importación de archivos `.csv`.
+* **DBeaver Community:** fue utilizado como la herramienta principal para la creación de esquemas, consultas SQL e importación de archivos csv
 * **PostgreSQL:** Sistema gestor de bases de datos relacionales utilizado en el servidor y en la laptop local.
 * **Docker Desktop:** Herramienta de contenedorización puesta a prueba durante la fase inicial.
 
 ---
 
-## 5. Código CREADO por el Alumno (Ejemplos Reales)
+## 5. Código
 
 ### A. Creación de Tabla de Prueba en Servidor Remoto (Validación de Equipo)
 ```sql
+
+);
 -- Tabla sencilla creada en DBeaver para confirmar sincronización en el servidor
 CREATE TABLE test_conexion (
     id SERIAL PRIMARY KEY,
@@ -54,7 +56,11 @@ CREATE TABLE test_conexion (
 
 -- Inserción de prueba realizada en DBeaver
 INSERT INTO test_conexion (nombre_integrante, estatus) 
-VALUES ('J', 'Conexión exitosa al servidor remoto desde DBeaver');
+VALUES ('José Cruz', 'Conexión exitosa al servidor remoto desde DBeaver');
+
+-- Inserción de prueba realizada en DBeaver
+INSERT INTO test_conexion (nombre_integrante, estatus) 
+
 
 -- Consulta de verificación
 SELECT * FROM test_conexion;
