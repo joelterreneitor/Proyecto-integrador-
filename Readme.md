@@ -17,4 +17,5 @@ El módulo de **Base de Datos** representa la capa de persistencia y almacenamie
 * **DBMS:** PostgreSQL 16
 * **Cliente de Base de Datos:** DBeaver Community Edition
 * **Contenedores:** Docker Desktop (Evaluación y pruebas)
-* **Fuente de Datos:** Dataset DENUE INEGI (Formato CSV)
+* **Fuente de Datos:** Dataset DENUE INEGI Formato CSV (por el momento)
+* 
